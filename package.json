@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "ola mundo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoclapis/node.js.git"
+  },
+  "author": "Diego Clapis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoclapis/node.js/issues"
+  },
+  "homepage": "https://github.com/diegoclapis/node.js#readme",
+  "dependencies": {
+    "chalk": "5.3.0"
+  }
+}
