@@ -2,7 +2,7 @@
 
 import chalk from 'chalk';
 import fs from 'fs';
-import pegaArquivoAsyncAwait from '../index.js';
+import pegaArquivo from '../index.js';
 import listaValidada from '../src/http-validacao.js';
 
 const caminho = process.argv;
@@ -40,12 +40,12 @@ async function processaTexto (argumentos) {
     }
 
     if (fs.lstatSync(caminho).isFile()) {
-        const resultado = await pegaArquivoAsyncAwait(caminho);
+        const resultado = await pegaArquivo(caminho);
         imprimeLista(valida, resultado);
     } else if (fs.lstatSync(caminho).isDirectory()) {
         const arquivos = await fs.promises.readdir(caminho);
         arquivos.forEach(async (nomeDeArquivo) => {
-            const lista = await pegaArquivoAsyncAwait(`${caminho}/${nomeDeArquivo}`)
+            const lista = await pegaArquivo(`${caminho}/${nomeDeArquivo}`)
             imprimeLista(valida, lista, `${nomeDeArquivo}`);
         });
     }
