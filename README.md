@@ -17,15 +17,23 @@ Passos do Projeto:
 
 ## Testando Scripts
 **Passando nome do arquivo ou pasta:** 
+
 npm run cli ./arquivos/texto.md
+
 *Retorna um array de link que são extaidos arquivo texto.md*
 
 **Passando nome do arquivo ou pasta e validando links encontrados:** 
+
 npm run cli ./arquivos/texto.md valida
+
 *Retorna um array de link que são extaidos arquivo texto.md com as URL validadas atravez do flech*
 
 **Sem precisar passar parametros:** 
+
 npm run cli:arquivo - *Retorna um array de link que são extaidos arquivo texto.md*
+
 npm run cli:pasta - *Retorna um array de link que são extaidos de uma pasta*
+
 npm run cli:arquivo valida - *Retorna um array de link que são extaidos arquivo texto.md  com as URL validadas atravez do flech*
+
 npm run cli:pasta valida - *Retorna um array de link que são extaidos de uma pasta  com as URL validadas atravez do flech*
