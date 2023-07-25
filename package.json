@@ -8,7 +8,10 @@
   "scripts": {
     "test": "ola mundo",
     "cli": "node src/cli.js",
-    "cli:valida": "node src/cli.js ./arquivos valida"
+    "cli:arquivo": "node src/cli.js ./arquivos",
+    "cli:pasta": "node src/cli.js ./arquivos",
+    "cli:arquivovalida": "node src/cli.js ./arquivos valida",
+    "cli:pastavalida": "node src/cli.js ./arquivos valida"
   },
   "repository": {
     "type": "git",
