@@ -1,6 +1,6 @@
 {
   "name": "teste.validaulr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Teste de leitura de arquivo e validação de URL",
   "keywords": ["markdown", "URL"],
   "main": "index.js",
